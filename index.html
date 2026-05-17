@@ -313,8 +313,8 @@ footer a:hover{color:white}
     </a>
     <nav class="nav-links" aria-label="Navigazione principale">
       <a href="#portfolio">Portfolio</a>
-      <a href="#giornata">La giornata</a>
-      <a href="#strumenti">Strumenti europei</a>
+      <a href="#stazioni">5 stazioni</a>
+      <a href="#strumenti">Strumenti</a>
       <a href="#tutor-ai">Tutor virtuale</a>
       <a href="#schede">Schede</a>
       <a href="#followup">Follow-up</a>
@@ -325,6 +325,7 @@ footer a:hover{color:white}
   <div class="mobile-menu" id="mobileMenu">
     <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
     <a href="#giornata" onclick="toggleMenu()">La giornata</a>
+    <a href="#stazioni" onclick="toggleMenu()">Le 5 stazioni</a>
     <a href="#strumenti" onclick="toggleMenu()">Strumenti europei</a>
     <a href="#tutor-ai" onclick="toggleMenu()">Tutor virtuale</a>
     <a href="#schede" onclick="toggleMenu()">Schede</a>
@@ -491,7 +492,7 @@ footer a:hover{color:white}
       </div>
       <div class="day-block">
         <div class="day-time">10:10—13:00</div>
-        <div class="day-content"><h4>5 stazioni di lavoro (35' ciascuna)</h4><p>CV e lettera, pitch e colloquio, formazione, profili professionali, autoimprenditorialità sociale.</p></div>
+        <div class="day-content"><h4><a href="#stazioni" style="color:inherit;text-decoration:none;border-bottom:1px dashed var(--primary)">5 stazioni di lavoro</a> (35' ciascuna)</h4><p>CV e lettera, pitch e colloquio, formazione, profili professionali, autoimprenditorialità sociale.</p></div>
       </div>
       <div class="day-block">
         <div class="day-time">13:50—14:10</div>
@@ -504,6 +505,63 @@ footer a:hover{color:white}
       <div class="day-block">
         <div class="day-time">15:05—15:30</div>
         <div class="day-content"><h4>Piano Individuale di Ricerca</h4><p>Inizializzazione del M-PIR (sezioni 1–5), questionario di gradimento, chiusura.</p></div>
+      </div>
+    </div>
+
+    <div id="stazioni" style="margin-top:64px;scroll-margin-top:80px">
+      <div class="section-head" style="margin-bottom:32px">
+        <span class="eyebrow">Cuore della giornata</span>
+        <h2>Le 5 stazioni di lavoro</h2>
+        <p>Ogni stazione è costruita intorno a una domanda chiave orientativa che apre il lavoro, lo attraversa e si chiude in un output con valore di orientamento personale. I 5 gruppi (Blu, Rosso, Verde, Giallo, Arancione) ruotano partendo ciascuno da una stazione diversa, per un totale di 35 minuti a stazione.</p>
+      </div>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-icon" style="background:#EAF6ED;color:var(--primary)">1</div>
+          <h3>Dal portfolio al CV e alla lettera</h3>
+          <p style="background:var(--info);padding:12px 14px;border-radius:10px;font-size:15px;font-style:italic;margin-bottom:14px">"Come traduco quello che ho fatto in qualcosa che un selezionatore capisce?"</p>
+          <p style="font-size:15px"><strong>Cosa produci:</strong> 3 frasi professionali per il CV (azione + contesto + destinatari + competenza + risultato) e l'abbozzo di una lettera di presentazione in 5 passaggi. Peer feedback a coppie su chiarezza, specificità, autenticità.</p>
+          <p style="font-size:13px;color:var(--body);opacity:0.75;margin-top:14px"><strong>Modulo bando:</strong> GLI STRUMENTI</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background:#EAF6ED;color:var(--primary)">2</div>
+          <h3>Raccontarsi al colloquio: pitch e role playing</h3>
+          <p style="background:var(--info);padding:12px 14px;border-radius:10px;font-size:15px;font-style:italic;margin-bottom:14px">"Cosa porto di mio quando ho 90 secondi per presentarmi?"</p>
+          <p style="font-size:15px"><strong>Cosa produci:</strong> un pitch personale di 90 secondi e tre round di role playing in triadi (candidato / selezionatore / osservatore), con scheda di osservazione e take away.</p>
+          <p style="font-size:13px;color:var(--body);opacity:0.75;margin-top:14px"><strong>Modulo bando:</strong> GLI STRUMENTI</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background:#EAF6ED;color:var(--primary)">3</div>
+          <h3>Competenze e percorsi formativi</h3>
+          <p style="background:var(--info);padding:12px 14px;border-radius:10px;font-size:15px;font-style:italic;margin-bottom:14px">"Cosa mi serve imparare adesso per andare dove voglio andare?"</p>
+          <p style="font-size:15px"><strong>Cosa produci:</strong> la scheda M6 con la logica competenza posseduta → bisogno → percorso utile, la mappa dei fabbisogni del sottogruppo (corso breve, ITS, università, certificazione, Erasmus+) e la prima azione concreta di ricerca formativa.</p>
+          <p style="font-size:13px;color:var(--body);opacity:0.75;margin-top:14px"><strong>Modulo bando:</strong> INFORMAZIONE E ORIENTAMENTO</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background:#EAF6ED;color:var(--primary)">4</div>
+          <h3>Dai Servizio Civile ai profili professionali</h3>
+          <p style="background:var(--info);padding:12px 14px;border-radius:10px;font-size:15px;font-style:italic;margin-bottom:14px">"Quali profili professionali sono già alla mia portata e quali con un piccolo investimento?"</p>
+          <p style="font-size:15px"><strong>Cosa produci:</strong> identificazione di 2 profili professionali coerenti con il portfolio (educazione, animazione territoriale, front office, segreteria sociale, comunicazione, facilitazione digitale, progettazione sociale, ecc.), matching in coppie con competenze presenti e da rafforzare, prima azione operativa per ciascun profilo.</p>
+          <p style="font-size:13px;color:var(--body);opacity:0.75;margin-top:14px"><strong>Modulo bando:</strong> INFORMAZIONE E ORIENTAMENTO</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" style="background:#EAF6ED;color:var(--primary)">5</div>
+          <h3>Autoimprenditorialità sociale</h3>
+          <p style="background:var(--info);padding:12px 14px;border-radius:10px;font-size:15px;font-style:italic;margin-bottom:14px">"Da un bisogno che ho visto in servizio, riesco a costruire una prima ipotesi di iniziativa?"</p>
+          <p style="font-size:15px"><strong>Cosa produci:</strong> un mini canvas di sottogruppo (bisogno, destinatari, soluzione, competenze mobilitabili, partner), una mossa individuale fattibile a 60 giorni e l'identificazione di un ostacolo prevedibile con il primo modo per aggirarlo.</p>
+          <p style="font-size:13px;color:var(--body);opacity:0.75;margin-top:14px"><strong>Modulo bando:</strong> GLI STRUMENTI (sezione autoimprenditorialità)</p>
+        </div>
+
+      </div>
+
+      <div class="box box-activity" style="margin-top:24px">
+        <h3>Come funziona la rotazione</h3>
+        <p>I 5 gruppi da 20 volontari ruotano simultaneamente, ciascuno partendo da una stazione diversa. Dentro ogni gruppo lavorano 4 sottogruppi da 4–5 persone: il formatore facilita e raccoglie, i sottogruppi producono. Il Leader di gruppo accompagna il gruppo per tutta la giornata e ne porta la voce nella restituzione finale.</p>
       </div>
     </div>
   </div>
