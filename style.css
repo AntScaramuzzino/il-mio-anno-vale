@@ -48,12 +48,20 @@ header{
   padding:14px 24px;max-width:1100px;margin:0 auto;
 }
 .brand{
-  display:flex;align-items:center;gap:10px;font-weight:700;color:var(--title);
+  display:flex;align-items:center;gap:12px;font-weight:700;color:var(--title);
+  text-decoration:none;
 }
-.brand-mark{
-  width:32px;height:32px;border-radius:10px;
-  background:linear-gradient(135deg,var(--primary),var(--secondary-2));
-  display:grid;place-items:center;color:white;font-weight:900;font-size:14px;
+.brand:hover{text-decoration:none}
+.brand-logo{
+  height:46px;width:auto;display:block;flex-shrink:0;
+}
+.brand-text{
+  display:flex;flex-direction:column;line-height:1.15;
+}
+.brand-text .brand-title{font-size:16px;font-weight:700;color:var(--title)}
+.brand-text .brand-sub{font-size:11px;font-weight:600;color:var(--body);opacity:0.75;text-transform:uppercase;letter-spacing:0.04em}
+.footer-logo{
+  height:64px;width:auto;margin-bottom:12px;filter:brightness(0) invert(1);opacity:0.85;
 }
 .nav-links{display:none;gap:24px;align-items:center}
 .nav-links a{color:var(--body);font-weight:600;font-size:15px}
