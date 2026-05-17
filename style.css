@@ -489,3 +489,51 @@ footer a:hover{color:white}
   h2{font-size:24px}
   h3{font-size:19px}
 }
+
+
+/* === Illustrations === */
+.section-illust{
+  max-width:280px;margin:0 0 28px 0;
+}
+.section-illust svg{width:100%;height:auto;display:block}
+
+.station-icon{
+  width:64px !important;height:64px !important;
+  position:relative;border-radius:16px !important;
+}
+.station-icon svg{width:48px;height:48px;display:block;margin:auto}
+.station-num-badge{
+  position:absolute;top:-6px;right:-6px;
+  width:24px;height:24px;border-radius:50%;
+  color:white;font-weight:900;font-size:12px;
+  display:grid;place-items:center;border:2px solid white;
+}
+
+.station-hero-grid{
+  display:grid;grid-template-columns:1fr;gap:24px;align-items:center;
+}
+@media(min-width:780px){
+  .station-hero-grid{grid-template-columns:1.2fr 1fr;gap:48px}
+}
+.station-hero-illust{
+  border-radius:24px;padding:24px;min-height:200px;
+  display:grid;place-items:center;
+}
+.station-hero-illust svg{width:100%;max-width:300px;height:auto}
+
+/* Station hero eyebrow uses group color */
+body[data-station] .station-hero .eyebrow{
+  background:var(--station-light);color:var(--station-dark);
+}
+body[data-station] .station-question{
+  background:var(--station-light);color:var(--station-dark);
+  border-left:4px solid var(--station-color);
+}
+body[data-station] .back-link{color:var(--station-color)}
+body[data-station] .nav-station-link:hover{border-color:var(--station-color)}
+
+@media(max-width:700px){
+  .section-illust{max-width:200px;margin-bottom:20px}
+  .station-hero-illust{padding:20px;min-height:auto}
+  .station-hero-illust svg{max-width:220px}
+}
