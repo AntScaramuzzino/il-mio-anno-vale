@@ -1,6 +1,6 @@
-# Il mio anno vale — Microsito di supporto
+# Il mio anno vale — Sito di supporto
 
-Microsito di supporto alla giornata di tutoraggio collettivo del Servizio Civile Universale.
+Sito di supporto alla giornata di tutoraggio collettivo del Servizio Civile Universale.
 Progetto ASC — CoopInRete.
 
 ## Stack
