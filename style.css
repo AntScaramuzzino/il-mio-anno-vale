@@ -382,3 +382,110 @@ footer a:hover{color:white}
   font-size:13px;color:var(--body);background:#F5F5F5;
   padding:4px 10px;border-radius:999px;
 }
+
+/* === Mobile optimization === */
+@media (max-width: 700px){
+  body{font-size:17px}
+  .container{padding:0 18px}
+  .nav{padding:12px 18px}
+  .brand-logo{height:38px}
+  .brand-text .brand-title{font-size:15px}
+  .brand-text .brand-sub{font-size:10px}
+  .menu-btn{padding:10px 12px;font-size:22px;min-width:44px;min-height:44px}
+  .mobile-menu{padding:12px 18px}
+  .mobile-menu a{padding:14px 0;font-size:17px;border-bottom:1px solid var(--border)}
+  .mobile-menu a:last-child{border-bottom:none}
+  
+  /* Hero */
+  .hero{padding:36px 0 32px}
+  .hero h1{font-size:32px}
+  .hero .lead{font-size:17px;margin-bottom:20px}
+  .hero-illustration{padding:24px;min-height:auto}
+  .compass{width:140px;height:140px}
+  .btn{padding:12px 20px;font-size:15px}
+  .btn-group{flex-direction:column;align-items:stretch}
+  .btn-group .btn{justify-content:center}
+  
+  /* Sections */
+  section{padding:40px 0;scroll-margin-top:70px}
+  .section-head{margin-bottom:28px}
+  .section-head p{font-size:17px}
+  
+  /* Cards */
+  .card{padding:22px}
+  .card-grid{gap:14px}
+  
+  /* Boxes */
+  .box{padding:20px;margin:20px 0}
+  .box h3{font-size:18px}
+  
+  /* Day timeline / Sequence */
+  .day-block, .sequence-item{
+    grid-template-columns:1fr;gap:6px;padding:16px 18px;
+  }
+  .day-time, .sequence-time{
+    text-align:left;font-size:14px;padding-top:0;
+  }
+  .day-content h4, .sequence-content h4{font-size:16px}
+  .day-content p, .sequence-content p{font-size:14px}
+  
+  /* Tool items */
+  .tool-item{padding:18px;grid-template-columns:1fr !important}
+  .tool-name{font-size:17px}
+  .tool-desc{font-size:14px}
+  .tool-link{align-self:flex-start;white-space:normal}
+  
+  /* Schede grid */
+  .scheda-grid{gap:10px}
+  .scheda{padding:14px 16px}
+  .scheda h4{font-size:15px}
+  .scheda p{font-size:13px}
+  .scheda-download{padding:14px 16px;gap:12px}
+  .scheda-download .scheda-icon{width:40px;height:40px;font-size:15px}
+  .scheda-download .scheda-info strong{font-size:15px}
+  .scheda-download .scheda-info span{font-size:13px}
+  .scheda-download .scheda-status{display:none}
+  
+  /* Station hero */
+  .station-hero{padding:32px 0 24px}
+  .station-question{font-size:18px;padding:16px 18px;margin:18px 0}
+  
+  /* Prompt cards */
+  .prompt-card{margin-bottom:14px}
+  .prompt-header{padding:16px 18px}
+  .prompt-header h3{font-size:16px}
+  .prompt-body{padding:18px}
+  .prompt-text{padding:14px;font-size:13px}
+  
+  /* FAQ */
+  .faq-q{padding:18px 18px;font-size:16px}
+  .faq-a{padding:0 18px 18px;font-size:15px}
+  
+  /* Nav station prev/next */
+  .nav-stations{flex-direction:column;gap:10px}
+  .nav-station-link{min-width:0;padding:14px 16px}
+  .nav-station-link.next{text-align:left;align-items:flex-start}
+  
+  /* Footer */
+  footer{padding:36px 0 24px}
+  .footer-grid{gap:24px;margin-bottom:24px}
+  .footer-logo{height:52px}
+  .footer-bottom{flex-direction:column;gap:6px;text-align:center;font-size:12px}
+  
+  /* Example pair */
+  .example-pair{padding:18px}
+  .example-pair .weak, .example-pair .strong{font-size:14px;padding:10px 12px}
+}
+
+@media (max-width: 400px){
+  .container{padding:0 14px}
+  .nav{padding:10px 14px;gap:8px}
+  .brand{gap:8px}
+  .brand-logo{height:34px}
+  .brand-text .brand-sub{display:none}
+  .hero h1{font-size:28px}
+  .hero .lead{font-size:16px}
+  .compass{width:120px;height:120px}
+  h2{font-size:24px}
+  h3{font-size:19px}
+}
