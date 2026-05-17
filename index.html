@@ -415,13 +415,24 @@
 </svg></div>
     <div class="section-head">
       <span class="eyebrow">Sezione 2</span>
-      <h2>Tutor virtuale: prompt per l'autoanalisi</h2>
-      <p>Sei prompt strutturati da usare con un assistente AI conversazionale (ChatGPT di OpenAI, Claude di Anthropic, Gemini di Google, Copilot di Microsoft, o equivalenti). Servono come palestra di pensiero, non come oracolo. Verifica sempre i fatti su fonti ufficiali e porta le risposte al colloquio con il tuo tutor umano.</p>
+      <h2>Tutor virtuale: il chatbot dedicato + prompt per l'autoanalisi</h2>
+      <p>Per la giornata "Il mio anno vale" è disponibile un GPT dedicato già pre-configurato che accompagna lungo le cinque stazioni. In alternativa, qui sotto trovi sei prompt strutturati da usare con un qualunque assistente AI conversazionale (ChatGPT, Claude, Gemini, Copilot o equivalenti). Servono come palestra di pensiero, non come oracolo. Verifica sempre i fatti su fonti ufficiali e porta le risposte al colloquio con il tuo tutor umano.</p>
     </div>
 
-    <div class="box box-attention">
-      <h4>Come si usa un prompt</h4>
-      <p>Copia il testo, incollalo nella chat dell'AI, personalizza le parti tra parentesi quadre con i tuoi dati. Leggi la risposta con spirito critico. Non condividere mai dati personali sensibili (codice fiscale, dati sanitari, contatti di terzi).</p>
+    <div class="box box-info" style="border-left:6px solid var(--primary)">
+      <span class="eyebrow" style="display:inline-block;font-size:13px;font-weight:700;color:var(--primary-dark);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px">Versione pronta all'uso · GPT dedicato</span>
+      <h3 style="margin-top:0">Tutor — Il mio anno vale (GPT su ChatGPT)</h3>
+      <p>Il GPT è la versione operativa del tutor virtuale: integra i system prompt dei cinque protocolli (uno per stazione) e il prompt unificato che gestisce il routing tra stazioni. Apre dai fatti, non scrive al posto tuo, ti accompagna passo per passo e a fine sessione ti dice dove riportare i contenuti nel Portfolio.</p>
+      <p style="margin-bottom:16px"><strong>Pre-requisito:</strong> account ChatGPT (anche gratuito). <strong>Nota:</strong> non condividere dati personali sensibili (codice fiscale, dati sanitari, contatti di terzi).</p>
+      <div class="btn-group">
+        <a href="https://chatgpt.com/g/g-6a0a1b0a602481918f377ec1123347a5-tutor-il-mio-anno-vale" target="_blank" rel="noopener" class="btn btn-primary">Apri il GPT "Tutor — Il mio anno vale" →</a>
+        <a href="#prompt-copia-incolla" class="btn btn-secondary">Oppure usa i prompt sotto</a>
+      </div>
+    </div>
+
+    <div class="box box-attention" id="prompt-copia-incolla">
+      <h4>Come si usa un prompt (in alternativa al GPT)</h4>
+      <p>I sei prompt qui sotto sono utili se preferisci usare un altro assistente AI (Claude, Gemini, Copilot) oppure se vuoi sperimentare i mattoni che compongono il GPT. Copia il testo, incollalo nella chat dell'AI, personalizza le parti tra parentesi quadre con i tuoi dati. Leggi la risposta con spirito critico. Non condividere mai dati personali sensibili (codice fiscale, dati sanitari, contatti di terzi).</p>
     </div>
 
     <!-- PROMPT 1 -->
@@ -442,7 +453,7 @@ A partire da questa attività, aiutami a:
 3. Suggerirmi una domanda di approfondimento per ciascuna competenza, da portare al colloquio con il mio tutor.
 
 Sii concreto e specifico. Evita formulazioni generiche del tipo "buone capacità relazionali". Se l'attività che ti ho descritto è troppo vaga, chiedimi un chiarimento prima di rispondere.</div>
-        <button class="btn btn-secondary copy-btn" onclick="copyPrompt('p1', this)">Copia prompt</button>
+        <div class="prompt-actions"><button class="btn btn-secondary copy-btn" onclick="copyPrompt('p1', this)">Copia prompt</button><a class="btn btn-primary open-btn" href="https://chatgpt.com/g/g-6a0a1b0a602481918f377ec1123347a5-tutor-il-mio-anno-vale" target="_blank" rel="noopener">Apri il tutor</a></div>
       </div>
     </div>
 
@@ -467,7 +478,7 @@ Forniscimi:
 3. Un avvertimento se la frase originale promette più di quanto effettivamente fatto.
 
 Lunghezza massima per ogni frase: 30 parole. Niente aggettivi vuoti ("ottimo", "eccellente"). Tieni un registro professionale ma naturale.</div>
-        <button class="btn btn-secondary copy-btn" onclick="copyPrompt('p2', this)">Copia prompt</button>
+        <div class="prompt-actions"><button class="btn btn-secondary copy-btn" onclick="copyPrompt('p2', this)">Copia prompt</button><a class="btn btn-primary open-btn" href="https://chatgpt.com/g/g-6a0a1b0a602481918f377ec1123347a5-tutor-il-mio-anno-vale" target="_blank" rel="noopener">Apri il tutor</a></div>
       </div>
     </div>
 
@@ -490,7 +501,7 @@ Conduci il colloquio in italiano in modalità interattiva:
    - Una domanda che mi ha messo in difficoltà e come potrei prepararmi meglio.
 
 Il mio background: ho appena concluso un anno di Servizio Civile Universale presso [tipo di ente, es. centro anziani / sportello informativo per giovani / progetto di accoglienza migranti]. Le mie principali competenze sono [elenca 3 competenze emerse dal portfolio].</div>
-        <button class="btn btn-secondary copy-btn" onclick="copyPrompt('p3', this)">Copia prompt</button>
+        <div class="prompt-actions"><button class="btn btn-secondary copy-btn" onclick="copyPrompt('p3', this)">Copia prompt</button><a class="btn btn-primary open-btn" href="https://chatgpt.com/g/g-6a0a1b0a602481918f377ec1123347a5-tutor-il-mio-anno-vale" target="_blank" rel="noopener">Apri il tutor</a></div>
       </div>
     </div>
 
@@ -517,7 +528,7 @@ Aiutami a:
 4. Suggerirmi due fonti ufficiali italiane dove cercare offerta formativa verificata (senza inventare nomi di corsi specifici: indicami dove cercare).
 
 Sii onesto sui limiti delle tue informazioni: i corsi cambiano spesso, le scadenze pure. Ricordami di verificare tutto sui siti ufficiali.</div>
-        <button class="btn btn-secondary copy-btn" onclick="copyPrompt('p4', this)">Copia prompt</button>
+        <div class="prompt-actions"><button class="btn btn-secondary copy-btn" onclick="copyPrompt('p4', this)">Copia prompt</button><a class="btn btn-primary open-btn" href="https://chatgpt.com/g/g-6a0a1b0a602481918f377ec1123347a5-tutor-il-mio-anno-vale" target="_blank" rel="noopener">Apri il tutor</a></div>
       </div>
     </div>
 
@@ -543,7 +554,7 @@ Aiutami a strutturare una prima ipotesi seguendo un mini canvas:
 6. Un rischio prevedibile: cosa potrebbe non funzionare e come potrei aggirarlo.
 
 Sii realistico e diretto: se l'idea ha buchi evidenti, segnalameli. Se è interessante, dimmelo, ma non lusingarmi. L'obiettivo è capire se vale la pena approfondirla, non convincermi a partire a tutti i costi.</div>
-        <button class="btn btn-secondary copy-btn" onclick="copyPrompt('p5', this)">Copia prompt</button>
+        <div class="prompt-actions"><button class="btn btn-secondary copy-btn" onclick="copyPrompt('p5', this)">Copia prompt</button><a class="btn btn-primary open-btn" href="https://chatgpt.com/g/g-6a0a1b0a602481918f377ec1123347a5-tutor-il-mio-anno-vale" target="_blank" rel="noopener">Apri il tutor</a></div>
       </div>
     </div>
 
@@ -567,7 +578,7 @@ Aiutami a costruire una proposta di miglioramento intraprenditoriale che potrei 
 4. Leva personale: quale mia competenza del Servizio Civile dimostra che posso coordinare questa innovazione?
 
 Dopo ogni quadrante, fermati e chiedimi se la formulazione mi sembra realistica prima di passare al successivo. Non scegliere al posto mio: voglio essere io a decidere la versione finale.</div>
-        <button class="btn btn-secondary copy-btn" onclick="copyPrompt('p5bis', this)">Copia prompt</button>
+        <div class="prompt-actions"><button class="btn btn-secondary copy-btn" onclick="copyPrompt('p5bis', this)">Copia prompt</button><a class="btn btn-primary open-btn" href="https://chatgpt.com/g/g-6a0a1b0a602481918f377ec1123347a5-tutor-il-mio-anno-vale" target="_blank" rel="noopener">Apri il tutor</a></div>
       </div>
     </div>
 
