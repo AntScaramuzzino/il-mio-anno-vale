@@ -374,7 +374,7 @@ html,body{
     <h2 class="sec-title">La mappa</h2>
     <p class="sec-sub">Cerca il badge colorato all'accoglienza · Ogni gruppo ruota tra le 5 stazioni. 10:10—13:25 · 35 min per stazione · cambio di stazione 5 min.</p>
     <div class="mappa" style="padding:32px 32px">
-      <svg viewBox="0 0 2000 1100" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block" role="img" aria-label="Planimetria dei due piani della sede con la posizione delle 5 stazioni: Stazioni 1 (blu) e 2 (rosso) in Sala Polivalente al Piano Terra che ospita anche la Plenaria, Stazione 3 (verde) in Lab. Form. Professionale al Piano Terra; Stazione 4 (giallo) in Area lavoro e studio al Primo Piano, Stazione 5 (arancione) in Sala Lettura al Primo Piano.">
+      <svg viewBox="0 0 2000 1000" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block" role="img" aria-label="Planimetria dei due piani della sede con la posizione delle 5 stazioni: Stazioni 1 (blu) e 2 (rosso) in Sala Polivalente al Piano Terra che ospita anche la Plenaria, Stazione 3 (verde) in Lab. Form. Professionale al Piano Terra; Stazione 4 (giallo) in Area lavoro e studio al Primo Piano, Stazione 5 (arancione) in Sala Lettura al Primo Piano.">
         <defs>
           <style>
             .floor-bg{fill:#FAFBFA;stroke:#1a1a1a;stroke-width:3}
@@ -481,60 +481,26 @@ html,body{
 
           <rect class="floor-bg" x="0" y="60" width="900" height="900" rx="6"/>
 
-          <!-- Top: Segreteria + Spazio polifunzionale -->
-          <rect class="room" x="20" y="80" width="320" height="180"/>
-          <text class="room-label" x="180" y="170">Segreteria</text>
+          <!-- Top-left: Segreteria -->
+          <rect class="room" x="20" y="80" width="320" height="200"/>
+          <text class="room-label" x="180" y="180">Segreteria</text>
 
-          <!-- Spazio polifunzionale — big circular -->
-          <rect class="room" x="20" y="260" width="640" height="520" rx="30"/>
-          <text class="room-label" x="340" y="510">Spazio polifunzionale</text>
-
-          <!-- Area lavoro e studio — Stazione 4 -->
-          <rect class="room-fill-s4" x="660" y="80" width="220" height="700"/>
-          <text class="room-label-small" x="770" y="170">Area lavoro</text>
-          <text class="room-label-small" x="770" y="192">e studio</text>
-          <circle cx="770" cy="430" r="60" fill="#E5B41B"/>
-          <text class="station-num" x="770" y="430">4</text>
+          <!-- Area lavoro e studio — Stazione 4 — right tall column -->
+          <rect class="room-fill-s4" x="580" y="80" width="300" height="700"/>
+          <text class="room-label" x="730" y="170">Area lavoro</text>
+          <text class="room-label" x="730" y="200">e studio</text>
+          <circle cx="730" cy="430" r="70" fill="#E5B41B"/>
+          <text class="station-num" x="730" y="430">4</text>
 
           <!-- Sala Lettura — Stazione 5 -->
-          <rect class="room-fill-s5" x="20" y="780" width="640" height="160"/>
-          <text class="room-label-small" x="200" y="860">Sala Lettura</text>
-          <circle cx="450" cy="860" r="50" fill="#E37935"/>
-          <text class="station-num" x="450" y="860">5</text>
+          <rect class="room-fill-s5" x="20" y="780" width="560" height="160"/>
+          <text class="room-label" x="180" y="860">Sala Lettura</text>
+          <circle cx="430" cy="860" r="50" fill="#E37935"/>
+          <text class="station-num" x="430" y="860">5</text>
 
           <!-- Terrazzo -->
-          <rect class="room" x="660" y="780" width="220" height="160"/>
-          <text class="room-label-small" x="770" y="870">Terrazzo</text>
-        </g>
-
-        <!-- Legend strip at bottom -->
-        <g transform="translate(40, 1030)">
-          <text x="0" y="0" style="font-family:'Lato',sans-serif;font-size:14px;font-weight:600;fill:#464646">Stazioni:</text>
-          <g transform="translate(80, -8)">
-            <circle r="11" fill="#2E78D6"/>
-            <text x="22" y="5" style="font-family:'Lato',sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a">1 · CV e lettera</text>
-          </g>
-          <g transform="translate(280, -8)">
-            <circle r="11" fill="#D94B4B"/>
-            <text x="22" y="5" style="font-family:'Lato',sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a">2 · Colloquio</text>
-          </g>
-          <g transform="translate(450, -8)">
-            <circle r="11" fill="#4BAD59"/>
-            <text x="22" y="5" style="font-family:'Lato',sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a">3 · Formazione</text>
-          </g>
-          <g transform="translate(640, -8)">
-            <circle r="11" fill="#E5B41B"/>
-            <text x="22" y="5" style="font-family:'Lato',sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a">4 · Profili</text>
-          </g>
-          <g transform="translate(800, -8)">
-            <circle r="11" fill="#E37935"/>
-            <text x="22" y="5" style="font-family:'Lato',sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a">5 · Imprenditorialità</text>
-          </g>
-          <g transform="translate(1050, -8)">
-            <circle r="11" fill="#E5B41B"/>
-            <text x="-5" y="5" style="font-family:'Lato',sans-serif;font-size:18px;font-weight:900;fill:white;text-anchor:middle">★</text>
-            <text x="22" y="5" style="font-family:'Lato',sans-serif;font-size:14px;font-weight:600;fill:#1a1a1a">Plenaria con Iannis</text>
-          </g>
+          <rect class="room" x="580" y="780" width="300" height="160"/>
+          <text class="room-label" x="730" y="870">Terrazzo</text>
         </g>
       </svg>
     </div>
