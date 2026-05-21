@@ -37,6 +37,19 @@ html,body{
   color:var(--body);
   -webkit-font-smoothing:antialiased;
   line-height:1.4;
+  position:relative;
+}
+/* Watermark logo ASC sullo sfondo del totem */
+body::before{
+  content:'';
+  position:fixed;
+  top:50%;left:50%;
+  width:780px;height:1046px;
+  transform:translate(-50%,-50%);
+  background:url('assets/logo-asc.png') center center / contain no-repeat;
+  opacity:0.06;
+  pointer-events:none;
+  z-index:0;
 }
 .totem{
   width:1080px;
@@ -45,6 +58,8 @@ html,body{
   display:flex;
   flex-direction:column;
   gap:40px;
+  position:relative;
+  z-index:1;
 }
 
 /* Header */
